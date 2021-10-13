@@ -1,0 +1,297 @@
+@import url("../general/menu.css");
+
+.container__all{
+    position: relative;
+    right: 0;
+    transition: all 300ms;
+    cursor: default;
+}
+
+.cover{
+    width: 100%;
+    padding-bottom: 60px;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 100px;
+}
+
+.container__cover{
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+    background-size: cover;
+    background-position: bottom;
+}
+
+.cover .container__info{
+    max-width: 500px;
+    margin-top: 20px;
+    z-index: 2;
+}
+
+.cover .h1-ferreteria{
+    max-width: 500px;
+    font-size: 50px;
+    font-weight: 900;
+    color: #373737;
+    text-align: center;
+}
+
+.cover .h2-huarmaca{
+    text-align: center;
+    font-size: 60px;
+    font-weight: 900;
+    color: #FEBA0B;
+    margin-top: -30px;
+}
+
+.cover .p-descripcion{
+    text-align: justify;
+    margin-top: 10px;
+    color: #373737;
+}
+/***************************************/
+
+.container__vector{
+    width: 95%;
+    margin: 10px 0 0 100px;
+    overflow: hidden;
+}
+
+.container__cover ul{
+    display: flex;
+    padding: 0;
+    width: 400%;
+
+    animation: cambio 12s infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    /*animation-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);*/
+    /*animation-timing-function: cubic-bezier(.86, -1.15, .48, 1.68);*/
+}
+
+.container__cover li{
+    list-style: none;
+    width: 100%;
+}
+
+.container__cover img{
+    width: 100%;
+}
+
+@keyframes cambio {
+    0%{margin-left: 0;}
+    20%{margin-left: 0;}
+
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+
+    75%{margin-left: -300%;}
+    100%{margin-left: -300%;}
+}
+
+/***********************************************************/
+/*TARJETAS*/
+.contenido-tarjetas h1{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    padding: 25px;
+    font-weight: 900;
+    
+}
+
+.contenido-tarjetas h1:hover{
+    color: #c70f4d;
+}
+
+.container_card{
+    margin: auto;
+    width: 100%;
+    display: flex;
+    max-width: 1100px;
+}
+
+.card{
+    width: 100%;
+    margin: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: white;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    cursor: default;
+    transition: all 400ms ease;
+}
+
+.card:hover{
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-3%);
+}
+
+.card figure img{
+    display: block;
+    margin: auto;
+    width: 250px;
+    height: 250px;
+}
+
+.card .contenido-card{
+    padding: 15px;
+    text-align: center;
+}
+
+.card .contenido-card p{
+    line-height: 1.5;
+    color: #6a6a6a;
+}
+
+.card .contenido-card h3{
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.card .contenido-card a{
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    color: #2fb4ff;
+    border: 1px solid #2fb4cc;
+    border-radius: 4px;
+    transition: all 400ms ease;
+}
+
+.card .contenido-card a:hover{
+    background: #2fb4cc;
+    color: white;
+}
+
+/**Movimiento de la imagen**/
+/*
+@keyframes move_vector {
+    0%{
+        transform: translateY(10px);
+    }
+    25%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateY(10px);
+    }
+}*/
+
+/*RESPONSIVE*/
+@media screen and (max-width: 1100px){
+    .container__vector{
+        margin:  auto;
+        width: 40%
+    }
+}
+
+@media screen and (max-width: 960px){
+    .container__cover{
+        display: block;
+    }
+
+    .container__info{
+        margin: auto;
+        max-width: 700px;
+    }
+
+    .container__vector{
+        margin: auto;
+        width: 70%;
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .container_card{
+        display: table;
+        width: 300px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card figure img{
+        display: flex;
+        width: 200;
+    }
+}
+
+@media screen and (max-width: 720px){
+    .container__vector{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .container__vector{
+        display: none;
+    }
+
+    .container__info{
+        margin: auto;
+    }
+
+    .container__info .h1-ferreteria{
+        font-size: 30px;
+    }
+
+    .container__info .h2-huarmaca{
+        margin: 2px 0;
+        font-size: 30px;
+    }
+
+    .container_card{
+        display: table;
+        width: 50px;;
+    }
+}
+
+@media screen and (max-width: 360px){
+    .container__cover{
+        width: 130%;
+    }
+
+    .container__info{
+        margin-left: 30px;
+    }
+
+    .container__vector{
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+
+    .contenido-tarjetas{
+        margin:  0 100px 0 0;
+    }
+
+    .contenido-tarjetas h1{
+        font-size: 18px;
+        margin: auto 15px;
+        text-align: center;
+    }
+
+    .card{
+        width: 200%;
+    }
+
+    .card figure img{
+        width: 100%;
+    }
+
+    .card .contenido-card p{
+        text-align: justify;
+    }
+}
+
+@media screen and (max-width: 280px){
+    .contenido-tarjetas{
+        margin:  0 100px 0 0;
+    }
+}
