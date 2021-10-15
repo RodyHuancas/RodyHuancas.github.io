@@ -7,25 +7,30 @@
     <title>Ferretería Chuqui - Inicio</title>
     <link rel="icon" type="image/svg" href="images/iconos svg/inicio.svg">
 
+    <link rel="stylesheet" href="boostrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/inicio/inicio.css">
 
     <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
 
 </head>
-<body>
+<body class="dark">
     <header id="header">
         <div class="container__header">
             <div class="logo">
                 <img src="images/svg/icono-ferreteria.svg" alt="" class="logito">
                 <h1 class="logo-chuqui">CHUQUI</h1>
             </div>
+
             <div class="container__nav">
                 <nav id="nav" class="nav_menu">
                     <ul class="container_menu">
                         <li class="texto_menu"><a href="#" class="select">Inicio</a></li>
-                        <li class="texto_menu"><a href="html/productos.html">Productos</a></li>
+                        <li class="texto_menu" ><a href="html/productos.html">Productos</a></li>
                         <li class="texto_menu"><a href="html/contactanos.html">Contáctanos</a></li>
                         <li class="texto_menu"><a href="html/nosotros.html">Nosotros</a></li>
+                        <div class="modo" id="modo">
+                            <i class="fas fa-toggle-on"></i>
+                        </div>
                     </ul>
                 </nav>
                 <div class="btn__menu" id="btn_menu"><i class="fas fa-bars"></i></div>
@@ -42,12 +47,36 @@
                     <p class="p-descripcion">Somos un establecimiento comercial que se dedica a la venta de herramientas manuales y eléctricas, suministros de plomería, suministros eléctricos, materiales de construcción, pintura, fierro, cemento, productos áridos como arena, piedra y arenilla, así como también la venta de ladrillo, y muchas cosas más.</p>
                 </div>
                 <div class="container__vector">
-                    <ul>
-                        <li><img src="images/JPG/slider-1.jpg" alt=""></li>
-                        <li><img src="images/JPG/slider-2.jpg" alt=""></li>
-                        <li><img src="images/JPG/slider-3.jpg" alt=""></li>
-                        <li><img src="images/JPG/slider-4.jpg" alt=""></li>
-                    </ul>
+                    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                          <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                          <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                          <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+                        </div>
+                        
+                        <div class="carousel-inner container__carrusel">
+                          <div class="carousel-item active">
+                            <img src="images/JPG/slider-1.jpg" alt="" class="d-block m-auto">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="images/JPG/slider-2.jpg" alt="" class="d-block m-auto">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="images/JPG/slider-3.jpg" alt="" class="d-block m-auto">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="images/JPG/slider-4.jpg" alt="" class="d-block m-auto">
+                          </div>
+                        </div>
+                        
+                        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                          <span class="carousel-control-next-icon"></span>
+                        </button>
+                      </div>
                 </div>
             </div>
         </div>
@@ -57,7 +86,7 @@
             <div class="container_card">
                 <div class="card">
                     <figure>
-                        <img src="images/PNG/cemento-sol.png" alt="">
+                        <img src="images/PNG/Productos/cemento-sol.png" alt="">
                     </figure>
                     <div class="contenido-card">
                         <h3>Cemento Sol</h3>
@@ -68,10 +97,10 @@
 
                 <div class="card">
                     <figure>
-                        <img src="images/PNG/juego-de-llaves.png" alt="">
+                        <img src="images/PNG/Productos/calamina-teja.png" alt="">
                     </figure>
                     <div class="contenido-card">
-                        <h3>Juego de Llaves</h3>
+                        <h3>Calamina de teja</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla dolores maxime laboriosam quos suscipit placeat quidem excepturi ducimus? Impedit, repudiandae.</p>
                         <a href="html/productos.html">Ir a productos</a>
                     </div>
@@ -79,10 +108,10 @@
 
                 <div class="card">
                     <figure>
-                        <img src="images/PNG/ladrido-de-techo.png" alt="">
+                        <img src="images/PNG/Productos/tubo-pvc.png" alt="">
                     </figure>
                     <div class="contenido-card">
-                        <h3>Ladrillo de techo</h3>
+                        <h3>Tubo PVC de 2"</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla dolores maxime laboriosam quos suscipit placeat quidem excepturi ducimus? Impedit, repudiandae.</p>
                         <a href="html/productos.html">Ir a productos</a>
                     </div>
@@ -120,6 +149,10 @@
         </div>
         <h1 class="pie-page">&copy; 2021, Chuqui | Todos los derechos reservados</h1>
     </footer>
+    
+    <!------------------------JavaScript---------------------------->
     <script src="js/script.js"></script>
+    <script src="js/dark.js"></script>
+    <script src="boostrap/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
