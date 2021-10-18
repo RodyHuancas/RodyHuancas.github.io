@@ -139,19 +139,7 @@
 .footer-column ul li a{
     margin: 0 -30px;
 }
-/**Movimiento de la imagen**/
-/*
-@keyframes move_vector {
-    0%{
-        transform: translateY(10px);
-    }
-    25%{
-        transform: translateY(-10px);
-    }
-    100%{
-        transform: translateY(10px);
-    }
-}*/
+
 
 /*RESPONSIVE*/
 @media screen and (max-width: 1100px){

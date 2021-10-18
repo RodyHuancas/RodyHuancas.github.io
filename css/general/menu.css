@@ -312,6 +312,12 @@ header .logo{
     }
 }
 
+@media screen and (max-width: 365px){
+    .footer{
+        width: 135%;
+    }
+}
+
 @media screen and (max-width: 360px){
     .footer{
         width: 140%;
